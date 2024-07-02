@@ -1,0 +1,64 @@
+.top-link{
+  font-size: 0.5em;
+  color : white;
+  background-color: black;
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+  padding : 0;
+  margin: 0;
+}
+
+ul#tel-url{
+  position: relative;
+  width: 50%;
+  height: 50%;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+.tel1, .tel2 {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+}
+
+.tel1 {
+  background-color: rgba(255, 255, 255, 0);
+  margin-left: 40px;
+  margin-top: -5px;
+  top: 20px;
+  left: 20px;
+}
+
+.tel2 {
+  background-color: rgba(255, 255, 255, 0);
+  margin-left: 10px;
+  margin-top: -10px;
+  top: 50px;
+  left: 50px;
+}
+
+ul#contact_button li {
+  width:170px; 
+  height: 55px; 
+  float: left; 
+  background: #f0f3f8; 
+  margin:auto; 
+}
+
+ul#contact_button li:last-child {
+  margin-right:0; 
+}
+#contact_button li a {
+  height:55px; 
+  line-height:53px; 
+  display: block; 
+  font-size: 15px;
+}
+#contact_button li .on, #contact_button li a:hover {
+  background:#00a0ff; 
+  color:#fff; 
+  height:55px; 
+  box-sizing: border-box; 
+}

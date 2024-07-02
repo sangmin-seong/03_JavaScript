@@ -1,0 +1,29 @@
+/* 전체 화면 설정 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: '맑은 고딕', 'Malgun Gothic', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
+  height: 100vh;
+}
+
+div, header, main, footer, section{border: 1px solid black;}
+
+header{
+  height: 20%;
+}
+
+main{
+  flex-grow: 1;
+}
+
+footer{
+  height: 20%;
+}
+
