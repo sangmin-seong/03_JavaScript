@@ -1,0 +1,49 @@
+/* Resetting some default styles for simplicity */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 2px solid #333;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.row {
+  display: flex;
+  gap: 5px;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.key:hover {
+  background-color: #ccc;
+}
+
+/* Example of key colors when pressed */
+.key-pressed {
+  background-color: #66ccff; /* Light blue */
+}
