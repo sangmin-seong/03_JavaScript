@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UI구현_성상민</title>
   <link rel="stylesheet" href="UI구현.css">
 </head>
+
 <body>
   <h1>UI구현_성상민</h1>
 
-  
+  <!--  적용할 내용 작성  -->
+  <main class="test">
+    <div>
+      <div class="test1">
+        너비 : <input type="text" id="test1">px
+        높이 : <input type="text" id="test2">px
+      </div>
+      <div class="test2">
+        글자크기 : <input type="text" id="test3">px
+        굵기 :
+        <div>
+          보통<input type="radio" name="checkbox1" value="normal">
+          굵게<input type="radio" name="checkbox1" value="bold">
+        </div>
+      </div>
+      <div class="test3">
+        글자색 : <input type="text" id="test4">
+        배경색 : <input type="text" id="test5">
+      </div>
+      <div>
+        가로정렬 :
+        <div class="test4">
+          왼쪽<input type="radio" name="checkbox2" value="flex-start">
+          가운데<input type="radio" name="checkbox2" value="center">
+          오른쪽<input type="radio" name="checkbox2" value="flex-end">
+        </div>
+      </div>
+      <div class="test5">
+        세로정렬 :
+        위<input type="radio" name="checkbox3" value="self-start">
+        가운데<input type="radio" name="checkbox3" value="center">
+        아래<input type="radio" name="checkbox3" value="self-end">
+      </div>
+      <div class="test6">
+        출력문자열 : <input type="text" id="test6">
+      </div>
+      <div class="test7">
+        <button id="changeButton">적용하기</button>
+      </div>
+    </div>
+    <!-- 결과 적용되는 부분 -->
+    <div>
+      <div class="result">
+        <span id="result">확인용</span>
+      </div>
+    </div>
 
-<script src="UI구현.js"></script>
+  </main>
+
+  <script src="UI구현.js"></script>
 </body>
+
 </html>

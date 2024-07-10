@@ -1,0 +1,181 @@
+/* game-board */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 70vw;
+  height: 70vh;
+
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border: 1px solid #333;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #333;
+  gap: 5px;
+  flex-grow: 1;
+}
+
+.user-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.com-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+
+  user-select : none;
+  
+  /* 배경 이미지 크기 맞춤, 가운데 정렬 */
+  background-size: cover;
+  background-position: center;
+}
+
+.image > img{
+  width: 100%;
+  user-select : none;
+}
+
+.btn {
+  width: 90px;
+  height: 70px;
+  border: 5px solid saddlebrown;
+  border-radius: 10px;
+  margin-top: 10px;
+
+  font-size: 24px;
+  font-weight: bold;
+  font-family: '휴먼명조';
+}
+
+.start-btn > button{
+  width: 280px;
+  height: 70px;
+  border: 5px solid saddlebrown;
+  border-radius: 10px;
+  margin-top: 10px;
+
+  font-size: 24px;
+  font-weight: bold;
+  font-family: '휴먼명조';
+}
+
+.vs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover{
+  background-color: rgba(109, 154, 251, 0.5);
+}
+
+.btn:active{
+  scale: 0.98;
+}
+
+.start-btn > button:hover{
+  background-color: rgba(255, 116, 29, 0.5);
+}
+
+.start-btn > button:active{
+  scale: 0.98;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+/* result-board */
+
+.table{
+  width: 131px;
+}
+
+ul{
+  list-style: none;
+}
+
+
+.result-board{
+  width: 210px;
+  padding-right: 10px;
+  margin-left: 5px;
+  overflow: auto;
+  position: relative;
+}
+
+.result-board h3{
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+
+.table{
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+
+.result-board li{
+  display: flex;
+  padding: 1px 0;
+  width: 100%;
+}
+
+.result-board span{
+  width: 50px;
+  text-align: center;
+}
+
+.result-board span:first-child{
+  font-weight: bold;
+  width: 70px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.win{ color : green; }
+.draw{ color : blue; }
+.lose{ color : red; }
+
