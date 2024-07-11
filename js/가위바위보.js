@@ -1,6 +1,6 @@
 Math.floor(Math.random() * 2) // 가위바위보 변수
 
-const btns = document.querySelectorAll(".btn-container");
+const btns = document.querySelectorAll(".btn");
 
 // 게임횟수 저장변수
 const count = 1;
