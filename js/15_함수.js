@@ -27,6 +27,8 @@ btn1.addEventListener("click", function(){
 
 })
 
+
+//===============================================
 const btn2 = document.querySelector("#btn2");
 
 function testFn2(num1, num2, num3){
@@ -35,6 +37,7 @@ function testFn2(num1, num2, num3){
   alert(`합계 : ${sum}`);
 
 }
+
 
 btn2.addEventListener("click", function(){
 
@@ -91,7 +94,7 @@ function pow(num, x){
   
   let result = 1; // 곱할 땐 영향을 주지 않는 1로 초기화
 
-  for(let i =0; i < x ; i++){
+  for(let i = 0; i < x ; i++){
     result  *= num;
   }
   // 현재 함수를 종료
@@ -113,26 +116,26 @@ document.querySelector("#btn4").addEventListener("click", function(){
   const x = Number(prompt("몇 제곱?"));
 
   alert(printStr(pow(num,x)));
-})
+}) //                 2  3
 
 /* return 확인하기 2 */
 function testFn5aaa(num){
-  return testFn5bbb(num) * 2;
+  return testFn5bbb(num) * 2; // 78;
 }
 
 function testFn5bbb(num){
-  return testFn5ccc(num) * 3;
+  return testFn5ccc(num) * 3;  // 39
 }
 
 function testFn5ccc(num){
-  return num + 1;
+  return num + 1;  //13
 }
 
 const btn5 = document.querySelector("#btn5");
 
 btn5.addEventListener("click", function(){
 
-  alert( testFn5aaa(3) );
+  alert( testFn5aaa(12) );
 
 })
 
