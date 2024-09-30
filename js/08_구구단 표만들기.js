@@ -35,7 +35,7 @@ function createTable() {
    let tr = "<tr>"
 
    for (let dan = start; dan <= end; dan++ ){
-      tr += `<td>${dan} X ${num} = ${dan * num}</td>`
+      tr += `<td>${dan} X ${num} = ${dan * num}</td>` // `<div class="name"> [i] </div>`
    }
 
    tr += "</tr>"
